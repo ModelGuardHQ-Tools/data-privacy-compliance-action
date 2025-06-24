@@ -1,0 +1,10 @@
+name: Test Data Privacy Compliance
+on: [pull_request, push]
+jobs:
+  privacy-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Privacy Compliance Check
+        uses: ./   # local Action
+        id: privacy
