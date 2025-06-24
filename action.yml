@@ -1,0 +1,17 @@
+name: "Data Privacy Compliance Checker"
+description: "Fails on committed secrets or PII in CI/CD."
+inputs:
+  files:
+    description: "Glob patterns of files to scan."
+    required: false
+    default: "**/*"
+  patterns-file:
+    description: "Path to JSON of regex patterns."
+    required: false
+    default: "data/patterns.json"
+runs:
+  using: "node12"
+  main: "src/index.js"
+outputs:
+  violations:
+    description: "JSON list of pattern names that matched."

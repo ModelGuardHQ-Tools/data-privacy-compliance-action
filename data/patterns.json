@@ -1,0 +1,6 @@
+{
+  "AWS Access Key": "AKIA[0-9A-Z]{16}",
+  "Email Address": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+  "Env File Detected": "\\.env",
+  "Private Key Block": "-----BEGIN (?:RSA|DSA|EC) PRIVATE KEY-----"
+}
